@@ -47,7 +47,7 @@ HEADERS = {
 contador= 0
 while True:
     try:
-        time.sleep(10)    
+        time.sleep(120)    
         vinted = Vinted()
         items = search("https://api.wallapop.com/api/v3/general/search?keywords="+producto+"&order_by=newest")
         items_ordenados = sorted(items, key=lambda x: x.date)
