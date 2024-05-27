@@ -51,7 +51,7 @@ while True:
         vinted = Vinted()
         items = search("https://api.wallapop.com/api/v3/general/search?keywords="+producto+"&order_by=newest")
         items_ordenados = sorted(items, key=lambda x: x.date)
-        ultimos_10_items = items_ordenados[-10:]
+        ultimos_10_items = items_ordenados[-5:]
         for item in ultimos_10_items:
             # if item.brand_title.lower() in allowed_brands:
                 if item.id not in sent_items: 
